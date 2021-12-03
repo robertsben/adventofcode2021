@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "./build",
+    "target": "es2021",
+    "moduleResolution": "node",
+    "strict": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      - ./src:/app/src
+      - ./fixtures:/app/fixtures
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+
+  result:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: result
